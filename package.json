@@ -1,0 +1,23 @@
+{
+  "name": "entregafood-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API do Entrega Food (Node.js + Express + PostgreSQL)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:init": "node db/init.js",
+    "db:reset": "node db/init.js --force",
+    "smoke": "node test/smoke.js"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.1"
+  }
+}
